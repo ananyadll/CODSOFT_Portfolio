@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d53a989c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/dd.png" alt="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hello there!</h1>
+                <h2>I'm <span>Ananya Devaragunda Lakshman</span><br></h2>
+                <h3><span>studying BE Information Science and Engineering <br> from Acharya Institute of Technology</span></h3>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------ABOUT--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background11.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>OBJECTIVE<br><br>By acquiring knowledge, expertise and a familiarity with the culture of the organization and by creating a healthy work environment,  I want to contribute towards realizing the organization's vision and become its integral part.</p>
+                    <h2 class="s-title"><br>Skills</h2>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++</span><br>To make Management System</li>
+                            <li><span>Web development</span><br>Web app interface</li>
+                            <li><span>App development</span><br>Design Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="s-title"><br>Experience</h2>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>AWS WORKSHOP Offline Training Program</li>
+                            <li><span>2023</span><br>Complete Bootstrap & React Bootcamp withHands-On Projects</li>
+                             </ul>
+                    </div>
+
+                    <h2 class="s-title"><br>Education</h2>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Ryan International School - ICSE</li>
+                            <li><span>2018-2020</span><br>St.Claret PU College</li>
+                            <li><span>2020-2024</span><br>Acharya Institute of Technology, BE ISE</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------PORTFOLIO------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/facetime.jpg">
+                    <div class="layer">
+                        <h3>Real-Time Face Recognition Application</h3>
+                        <p>The real-time face recognition application is built in Android Studio using Java is a cutting-edge software solution that leverages the power of facial recognition technology to provide accurate and efficient identification of individuals in real-time scenarios.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/clgrec.jpg">
+                    <div class="layer">
+                        <h3>Educational Institution Records Management System</h3>
+                        <p>The College Faculty Management System is a software application designed to streamline and automate the management of faculty members in a college or educational institution. It provides a comprehensive platform for handling various tasks related to faculty management, such as adding new faculty members, maintaining their records, managing their schedules, and facilitating efficient communication between faculty and administration.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/emr.png">
+                    <div class="layer">
+                        <h3>EatMeatRepeat - Fresh Meat Ordering Management System</h3>
+                        <p>This platform can be used to order fresh meat online from standard meat shops or small meat shop vendors from rural areas which would help them in their business.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------CONTACT------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> aanya12demo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7338077939</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/dl_ananya27061?t=JKY6ELx0jIbfzOl3jHZ4gA&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com/ananya.o_o?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ananya-devaragunda-lakshman-64b654266"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/RESUME_ananya_dl.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© copyrights@2023 All rights reserved. Made by Ananya Devaragunda Lakshman</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html> 
